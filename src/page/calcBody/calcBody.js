@@ -4,13 +4,13 @@ import Screen from "../../components/screen/screen";
 import SmallButton from "../../components/smallButton/smallButton";
 
 import { CalculateContext } from "../../provider/calculateProvider";
-import { useContext } from "react";
-import { clearAction } from "../../reducer/calculate";
+import { useContext, useEffect } from "react";
+import { clearAction, backspaceAction } from "../../reducer/calculate";
 
 function CalcBody() {
   const buttons = [
     [7, 8, 9, "/"],
-    [2, 5, 6, "*"],
+    [4, 5, 6, "*"],
     [3, 2, 1, "-"],
     [0, ".", "=", "+"],
   ];
@@ -19,6 +19,20 @@ function CalcBody() {
 
   const handleClear = () => {
     calcDispatch(clearAction());
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyPress);
+    return ()=> document.removeEventListener('keydown', handleKeyPress)
+  });
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Backspace') {
+      calcDispatch(backspaceAction())
+    } 
+    if (e.key === 'Escape') {
+        handleClear()
+      } 
   };
 
   return (
