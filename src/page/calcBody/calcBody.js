@@ -10,7 +10,7 @@ import { clearAction } from "../../reducer/calculate";
 function CalcBody() {
   const buttons = [
     [7, 8, 9, "/"],
-    [2, 5, 6, "*"],
+    [4, 5, 6, "*"],
     [3, 2, 1, "-"],
     [0, ".", "=", "+"],
   ];
