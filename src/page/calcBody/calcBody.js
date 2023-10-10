@@ -8,6 +8,7 @@ import { useContext } from "react";
 import { clearAction } from "../../reducer/calculate";
 
 function CalcBody() {
+  // this is a matrix representing the buttons we will use in this app
   const buttons = [
     [7, 8, 9, "/"],
     [4, 5, 6, "*"],

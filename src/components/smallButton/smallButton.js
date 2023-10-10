@@ -7,9 +7,11 @@ import {
   calculateAction,
 } from "../../reducer/calculate";
 
+// this component wil be resued for EACH of our buttons
 function SmallButton({ input }) {
   const { calcState, calcDispatch } = useContext(CalculateContext);
 
+  // based on the type of button we clik we may need to use "different" operations 
   const handleClick = () => {
     const currentState = calcState.currentOperation;
     if (input === "=") {

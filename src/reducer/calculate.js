@@ -11,7 +11,7 @@ export const initialState = [
     calculated: true,
   },
 ];
-
+// This is the reducer which will use to manipulate the global state (context)
 export function calculateReducer(state, action) {
   switch (action.type) {
     case ADD:
@@ -50,6 +50,8 @@ export function calculateReducer(state, action) {
       return state;
   }
 }
+
+// action creator functions that will feed into the reducer above
 
 export function addAction(input) {
   return {
