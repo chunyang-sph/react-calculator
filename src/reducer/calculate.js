@@ -12,6 +12,8 @@ export const initialState = [
   },
 ];
 
+
+// the reducer which will determine what actions to be used on the global state (context)
 export function calculateReducer(state, action) {
   switch (action.type) {
     case ADD:
@@ -51,6 +53,7 @@ export function calculateReducer(state, action) {
   }
 }
 
+// the action creators that would be used to feed into the the dispatch
 export function addAction(input) {
   return {
     type: ADD,
