@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Rocket Academy React Project Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You and your team are tasked with building out the following project in this coming section. In this repository, you will find the starter code necesary to get started with the project.
 
-## Available Scripts
 
-In the project directory, you can run:
+Below are some overview to help guide you with what is expected
 
-### `npm start`
+## React Calculator
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You and your team are tasked to build our your interpritation of a basic, working __CALCULATOR__.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Suggested Features
 
-### `npm test`
+We suggest the following features to be incorporated into your app:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Basic inputs to be entered and displayed on a screen
+2. Inputs can be calculated after a click of an "equal" sign
+3. Users are able to "clear" the screen if mistakes were made
+4. Input validation to ensure users do not enter double operations (i.e. */ or -\*) that will cause errors
 
-### `npm run build`
+### Suggested Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Calculator body to contain the calculator
+2. Screen components to display the inputs and the calculations when needed
+3. re-usable button component that can be used dynamically to trigger inputs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### What is provided for you
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In here you will find the following provided for you already:
+1. A suggested file structure for you to start your project
+2. A boiler plate context boiler plate and reducer to help your set up
+3. Reference solutions for you to look at commited into different branches
+### More comfortable
 
-### `npm run eject`
+**Only proceed with this if you have completed the above and are looking for further challenges!**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Add a feature that allows your app to be able to detect keypresses to allow users to use their keyboard to interact with your Calculator!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployed Reference Solutions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+__Base Reference:__ https://rocket-calc-base.netlify.app
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+__More Comfortable Refernce:__ https://rocket-calc-comfy.netlify.app
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
