@@ -1,44 +1,36 @@
-# Rocket Academy React Project Challenge
+# Rocket Academy Calculator Testing
 
-You and your team are tasked with building out the following project in this coming section. In this repository, you will find the starter code necesary to get started with the project.
+You and your partner are tasked with testing Rocket Academy's Calculator app from Workshop 1. This branch contains Rocket Academy's app implementation for you to write tests for.
 
-
-Below are some overview to help guide you with what is expected
-
-## React Calculator
-
-You and your team are tasked to build our your interpritation of a basic, working __CALCULATOR__.
-
-### Suggested Features
-
-We suggest the following features to be incorporated into your app:
+### App Features
 
 1. Basic inputs to be entered and displayed on a screen
 2. Inputs can be calculated after a click of an "equal" sign
 3. Users are able to "clear" the screen if mistakes were made
-4. Input validation to ensure users do not enter double operations (i.e. */ or -\*) that will cause errors
+4. Input validation to ensure users do not enter double operations (i.e. \*/ or -\*) that will cause errors
+5. Detects keypresses for users to interact with calculator with keyboard
 
-### Suggested Components
+### App Components
 
 1. Calculator body to contain the calculator
 2. Screen components to display the inputs and the calculations when needed
 3. re-usable button component that can be used dynamically to trigger inputs
 
-### What is provided for you
+### Suggested Tests to Write
 
-In here you will find the following provided for you already:
-1. A suggested file structure for you to start your project
-2. A boiler plate context boiler plate and reducer to help your set up
-3. Reference solutions for you to look at commited into different branches
-### More comfortable
+- Digits render on calculator screen
+- Clear button clears screen
+- Operators render on calculator screen
+- Operators and decimal replace each other if entered in succession
+- Equals button evaluates expressions correctly
+- Equals button clears screen on invalid expressions
+- Operators can be combined with numbers on either side
+- Operators can be chained with numbers in between
+- Order of operations prioritises `/` and `*` before `-` and `+`
+- Order of operations prioritises first operator when both operators are same priority
+- Numbers with decimals are parsed and evaluated correctly
+- Keyboard interactions work as expected
 
-**Only proceed with this if you have completed the above and are looking for further challenges!**
+### Deployed Reference Solution
 
-Add a feature that allows your app to be able to detect keypresses to allow users to use their keyboard to interact with your Calculator!
-
-## Deployed Reference Solutions
-
-__Base Reference:__ https://rocket-calc-base.netlify.app
-
-__More Comfortable Refernce:__ https://rocket-calc-comfy.netlify.app
-
+https://rocket-calc-comfy.netlify.app
