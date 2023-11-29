@@ -15,16 +15,16 @@ function SmallButton({ input }) {
   useEffect(() => {
     document.addEventListener("keydown", handleKeyPress);
     // the return is used as a "component did unmount" cyle and used to disable the event listener
-    return ()=> document.removeEventListener('keydown', handleKeyPress)
+    return () => document.removeEventListener("keydown", handleKeyPress);
   });
 
   // handle the keypresses!
   const handleKeyPress = (e) => {
     if (e.key === String(input)) {
       handleClick();
-    } 
-    if(e.key==='Enter' && input ==='='){
-        handleClick()
+    }
+    if (e.key === "Enter" && input === "=") {
+      handleClick();
     }
   };
 

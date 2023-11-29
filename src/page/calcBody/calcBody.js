@@ -21,20 +21,20 @@ function CalcBody() {
   const handleClear = () => {
     calcDispatch(clearAction());
   };
-// also putting in an event listener for "backspace"
+  // also putting in an event listener for "backspace"
   useEffect(() => {
     document.addEventListener("keydown", handleKeyPress);
-    return ()=> document.removeEventListener('keydown', handleKeyPress)
+    return () => document.removeEventListener("keydown", handleKeyPress);
   });
 
   // we just put in 2 extra keypresse for backspace and clear (using escape) just for a better UX
   const handleKeyPress = (e) => {
-    if (e.key === 'Backspace') {
-      calcDispatch(backspaceAction())
-    } 
-    if (e.key === 'Escape') {
-        handleClear()
-      } 
+    if (e.key === "Backspace") {
+      calcDispatch(backspaceAction());
+    }
+    if (e.key === "Escape") {
+      handleClear();
+    }
   };
 
   return (

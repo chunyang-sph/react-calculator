@@ -14,7 +14,4 @@ const CalculateProvider = ({ children }) => {
   );
 };
 
-
-
-
-export default CalculateProvider
+export default CalculateProvider;
