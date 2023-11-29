@@ -8,15 +8,12 @@ import { useContext } from "react";
 import { clearAction } from "../../reducer/calculate";
 
 function CalcBody() {
-
-
   const { calcDispatch } = useContext(CalculateContext);
 
   return (
     <div className="calcContainer">
       <Screen />
-      <div className="buttonContainer">
-      </div>
+      <div className="buttonContainer"></div>
     </div>
   );
 }

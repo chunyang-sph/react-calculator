@@ -26,8 +26,7 @@ export function calculateReducer(state, action) {
 export function addAction() {
   return {
     type: ADD,
-    payload: {
-    },
+    payload: {},
   };
 }
 
@@ -37,7 +36,6 @@ export function calculateAction() {
     payload: {},
   };
 }
-
 
 export function clearAction() {
   return {

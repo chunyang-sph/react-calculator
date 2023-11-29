@@ -4,11 +4,11 @@ import { useReducer, createContext } from "react";
 // importing the reducer and initial state from the reducer files
 import { calculateReducer, initialState } from "../reducer/calculate";
 
-// creating a new empty context for children components to use 
+// creating a new empty context for children components to use
 export const CalculateContext = createContext();
 
 const CalculateProvider = ({ children }) => {
-   // initializing a useReducer (advanced useState), with the state (calcState) and the setState(calcDispatch) being passed down in the context provider
+  // initializing a useReducer (advanced useState), with the state (calcState) and the setState(calcDispatch) being passed down in the context provider
   const [calcState, calcDispatch] = useReducer(calculateReducer, initialState);
 
   return (
@@ -19,7 +19,4 @@ const CalculateProvider = ({ children }) => {
   );
 };
 
-
-
-
-export default CalculateProvider
+export default CalculateProvider;
