@@ -57,6 +57,7 @@ function SmallButton({ input }) {
     <div
       className={`calcButton ${isNaN(Number(input)) ? "light" : "dark"}`}
       onClick={handleClick}
+      data-testid={`button${input}`}
     >
       {input}
     </div>
