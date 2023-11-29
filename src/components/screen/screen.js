@@ -8,7 +8,7 @@ function Screen() {
 
   // the content of what is on the screen is to be stored in the context so it can be used across multiple components without needing state to be based via props
   return (
-    <div className="screen">
+    <div className="screen" data-testid="screen">
       <p>{calcState.currentOperation}</p>
     </div>
   );
