@@ -31,6 +31,6 @@ You and your partner are tasked with testing Rocket Academy's Calculator app fro
 - Numbers with decimals are parsed and evaluated correctly
 - Keyboard interactions work as expected
 
-### Deployed Reference Solution
+### Deployed App for Reference
 
 https://rocket-calc-comfy.netlify.app
