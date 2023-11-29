@@ -1,9 +1,4 @@
-import {
-  ADD,
-  CALCULATE,
-  CLEAR,
-  BACKSPACE,
-} from "./calculateActionType";
+import { ADD, CALCULATE, CLEAR, BACKSPACE } from "./calculateActionType";
 
 export const initialState = [
   {
@@ -11,7 +6,6 @@ export const initialState = [
     calculated: true,
   },
 ];
-
 
 // the reducer which will determine what actions to be used on the global state (context)
 export function calculateReducer(state, action) {
@@ -27,7 +21,6 @@ export function calculateReducer(state, action) {
         calculated: false,
       };
     case CALCULATE:
-      
       try {
         // eslint-disable-next-line no-eval
         const calcOutput = eval(state.currentOperation);
